@@ -3,12 +3,17 @@ import './searchBar.css'
 
 class searchBar extends react.Component {
 
+    state ={
+        search : ""
+    }
+
     render() {
         return (
             <div className="form">
                 <label for="searchForm" className="form-label"><i className="bi bi-search"></i></label>
-                <input type="text" className="form-control form-input" id="searchForm" placeholder="Search"/>
+                <input onChange={(event) => this.setState({search: event.target.value })}  type="text" className="form-control form-input" id="searchForm" placeholder="Search"/>
                 </div>
+                
            )
     }
 

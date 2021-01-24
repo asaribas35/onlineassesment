@@ -40,7 +40,10 @@ class App extends React.Component {
         "teacher":"Aslı Arı",
         "lastTime":"19/02/2021",
         "time": 46
-    }]
+    }],
+
+     search : ""
+
   }
 
 
