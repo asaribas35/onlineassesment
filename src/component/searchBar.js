@@ -5,9 +5,9 @@ class searchBar extends react.Component {
 
     render() {
         return (
-            <div class="form">
-                <label for="searchForm" class="form-label"><i class="bi bi-search"></i></label>
-                <input type="text" class="form-control form-input" id="searchForm" placeholder="Search"/>
+            <div className="form">
+                <label for="searchForm" className="form-label"><i className="bi bi-search"></i></label>
+                <input type="text" className="form-control form-input" id="searchForm" placeholder="Search"/>
                 </div>
            )
     }
