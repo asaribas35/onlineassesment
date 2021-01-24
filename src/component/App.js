@@ -1,11 +1,49 @@
 import React from 'react';
 import SearchBar from './searchBar';
-import Exam from './exam';
+import ExamList from './examList';
 import './App.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 
 class App extends React.Component {
+
+  state = {
+      exams: [       
+     {
+        "id": 1,
+        "lesson":"algorithms",
+        "teacher":"John Doe",
+        "type":"Quiz",
+        "lastTime":"22/02/2021",
+        "time": 60
+    },
+    {
+        "id": 2,
+        "lesson":"Data",
+        "type":"Quiz",
+        "teacher":"Martin Bridge",
+        "lastTime":"20/02/2021",
+        "time": 30
+    },
+    {
+        "id": 3,
+        "lesson":"AI",
+        "type":"Midterm",
+        "teacher":"Ahmet uslu",
+        "lastTime":"18/02/2021",
+        "time": 60
+    },
+    {
+        "id": 4,
+        "lesson":"Math",
+        "type":"Midterm",
+        "teacher":"Aslı Arı",
+        "lastTime":"19/02/2021",
+        "time": 46
+    }]
+  }
+
+
 
     render(){
 
@@ -53,25 +91,14 @@ class App extends React.Component {
 
       <div className="container">
         <p>Last Exams</p>
-        <Exam />
-        <hr></hr>
-        <Exam />
-        <hr></hr>
-        <Exam />
-        <hr></hr>
-        <Exam />
-        <hr></hr>
-        <Exam />
+        <ExamList 
+            exams ={this.state.exams}
+        />
+        
 
       </div>
+        {/* ------------------------------Content------------------------------------*/}
 
-
-
-
-
-
-
-      {/* ------------------------------Content------------------------------------*/}
     </div>
        );
     }

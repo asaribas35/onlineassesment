@@ -1,0 +1,36 @@
+{
+    "exams": [
+        {
+            "id": 1,
+            "lesson":"algorithms",
+            "teacher":"John Doe",
+            "type":"Quiz",
+            "last-time":"22/02/2021",
+            "time": 60
+        },
+        {
+            "id": 2,
+            "lesson":"Data",
+            "type":"Quiz",
+            "teacher":"Martin Bridge",
+            "last-time":"20/02/2021",
+            "time": 30
+        },
+        {
+            "id": 3,
+            "lesson":"AI",
+            "type":"Midterm",
+            "teacher":"Ahmet uslu",
+            "last-time":"18/02/2021",
+            "time": 60
+        },
+        {
+            "id": 4,
+            "lesson":"Math",
+            "type":"Midterm",
+            "teacher":"Aslı Arı",
+            "last-time":"19/02/2021",
+            "time": 46
+        }
+    ]
+}
