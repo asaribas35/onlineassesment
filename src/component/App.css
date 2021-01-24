@@ -1,0 +1,18 @@
+.buttons{
+    width: 13em;
+    position: relative;
+    left: 4em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buton1{
+    height: 100%;
+    width: 6em;
+}
+
+.buton2{
+    width: 4em;
+    height:70%;
+    margin: auto;
+}
