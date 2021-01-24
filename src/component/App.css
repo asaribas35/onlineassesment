@@ -35,3 +35,23 @@
     background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 39%, rgba(252,176,69,1) 100%);
 }
+.nav{
+    position: absolute;
+    right: 25em;
+    top: 1.5em;
+    width: 20em;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav ul li{
+    margin:auto 1em;
+    width: 4em;
+}
+.buton3{
+    position: relative;
+    right: 2em;
+}
