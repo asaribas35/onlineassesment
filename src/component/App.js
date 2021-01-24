@@ -8,9 +8,12 @@ function App() {
   return (
     <div className="App">
       <div className="header">
+        <div className="header-top">
+
+        </div>
         <div className="container">
           <div className="row">
-            <span class="navbar-brand mb-0 h1">KWİ</span>
+            <span class="navbar-brand mb-0 h1 logo">KWİ</span>
           </div>
         </div>
         <hr></hr>
@@ -23,6 +26,7 @@ function App() {
             </div>
             </div>
           </div>
+          <hr></hr>
         </div>
         
       </div>
