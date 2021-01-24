@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 .buttons{
     width: 13em;
@@ -22,6 +22,12 @@
 .logo{
     margin-top: 0.5em;
     }
+.sText{
+    position: relative;
+    left:1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900 !important;
+}
 
 .header-top{
     width: 100%;

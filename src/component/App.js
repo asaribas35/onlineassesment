@@ -13,12 +13,13 @@ function App() {
         </div>
         <div className="container">
           <div className="row">
-            <span class="navbar-brand mb-0 h1 logo">KWİ</span>
+            <span className="navbar-brand mb-0 h1 logo">Online Education Assesment</span>
           </div>
         </div>
         <hr></hr>
         <div className="container">
           <div className="row">
+          <span className="navbar-brand mb-0 h1 sText">kwi</span>
               <SearchBar />
             <div className="buttons">
             <button type="button" class="btn btn-danger buton1">Sign Up</button>
