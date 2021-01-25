@@ -1,6 +1,8 @@
 import React from 'react';
 import SearchBar from './searchBar';
 import ExamList from './examList';
+import LoginPage from './LoginPage';
+
 import './App.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css'
@@ -51,7 +53,9 @@ class App extends React.Component {
   }
   ],
 
-     search : ""
+     search : "" ,
+
+     loginP : false
 
   }
    searchExam = (event) => {
@@ -60,6 +64,12 @@ class App extends React.Component {
       this.setState({search: event.target.value})
     
     
+   }
+
+   loginOC = () => {
+
+     this.setState({loginP : !this.state.loginP})
+
    }
 
 
@@ -75,6 +85,7 @@ class App extends React.Component {
 
   return (
     <div className="App">
+      
       {/* -----------------------------HEADER------------------------------------------ */}
       <div className="header">
         <div className="header-top">
@@ -106,9 +117,10 @@ class App extends React.Component {
             <SearchBar 
               searchExamProp={this.searchExam}
             />
+            
             <div className="buttons">
               <button type="button" className="btn btn-danger buton1">Sign Up</button>
-              <button type="button" className="btn btn-light buton2">Login</button>
+              <button onClick={this.loginOC}  type="button" className="btn btn-light buton2">Login</button>
             </div>
           </div>
         </div>
@@ -119,14 +131,27 @@ class App extends React.Component {
 
       <div className="container">
         <p>Last Exams</p>
+        
         <ExamList 
             exams ={filteredExams}
+            
         />
         
-
+        
       </div>
         {/* ------------------------------Content------------------------------------*/}
-
+                {/* ------------------------------LoginPage------------------------------------*/}
+                  {
+                      (this.state.loginP) ?
+                        <LoginPage 
+                          loginOC ={this.loginOC}
+                        /> : null
+                  }
+                     
+                {/* ------------------------------LoginPage---------------------------------*/}        
+        <div>
+        
+        </div>
     </div>
        );
     }
