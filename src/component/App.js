@@ -40,15 +40,38 @@ class App extends React.Component {
         "teacher":"Aslı Arı",
         "lastTime":"19/02/2021",
         "time": 46
-    }],
+    },
+    {
+      "id": 5,
+      "lesson":"Biology",
+      "type":"Midterm",
+      "teacher":"Serhat Dişli",
+      "lastTime":"19/02/2021",
+      "time": 60
+  }
+  ],
 
      search : ""
 
   }
+   searchExam = (event) => {
+     console.log(event.target.value);
 
+      this.setState({search: event.target.value})
+    
+    
+   }
 
 
     render(){
+
+      let filteredExams = this.state.exams.filter(
+        (exam) => {
+          return exam.lesson.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+        }
+      )
+
+
 
   return (
     <div className="App">
@@ -80,7 +103,9 @@ class App extends React.Component {
         <div className="container">
           <div className="row">
             <span className="navbar-brand mb-0 h1 sText">kwi</span>
-            <SearchBar />
+            <SearchBar 
+              searchExamProp={this.searchExam}
+            />
             <div className="buttons">
               <button type="button" className="btn btn-danger buton1">Sign Up</button>
               <button type="button" className="btn btn-light buton2">Login</button>
@@ -95,7 +120,7 @@ class App extends React.Component {
       <div className="container">
         <p>Last Exams</p>
         <ExamList 
-            exams ={this.state.exams}
+            exams ={filteredExams}
         />
         
 
