@@ -1,0 +1,22 @@
+.cardQuestion{
+    position: relative;
+    top: 20em;
+    width: 100%;
+    height: 15em;
+    border-radius: 0px !important;
+}
+.question{
+margin-top: 1em;
+margin-left: 1em;
+}
+.answer{
+ position: absolute;
+ left: 5em;
+ top:4em;
+}
+
+.timedown p{
+    position: absolute;
+    bottom : -9em;
+    right: 25em;
+}
