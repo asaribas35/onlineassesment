@@ -2,7 +2,9 @@ import React from 'react';
 import SearchBar from './searchBar';
 import ExamList from './examList';
 import LoginPage from './LoginPage';
-import ExamPage from './ExamPage'
+import ExamPage from './ExamPage';
+import {
+  BrowserRouter as Router,Route} from "react-router-dom";
 
 
 import './App.css';
@@ -86,10 +88,10 @@ class App extends React.Component {
 
 
     return (
-      
+      <Router>
 
         <div className="App">
-
+          <Route path="/" exact>
           {/* -----------------------------HEADER------------------------------------------ */}
           <div className="header">
             <div className="header-top">
@@ -151,15 +153,18 @@ class App extends React.Component {
                 loginOC={this.loginOC}
               /> : null
           }
-
+        </Route>
           {/* ------------------------------LoginPage---------------------------------*/}
-          <div>
+          
+          <Route path="/exam">
+          
+             <ExamPage />
 
-          </div>
-          <ExamPage />
+          </Route>
+
         </div>
       
-
+      </Router>
     );
   }
 }

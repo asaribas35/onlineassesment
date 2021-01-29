@@ -9,7 +9,16 @@
     right: 3em;
     top:1.8em;
     font-family: 'Poppins', sans-serif;
+   
 }
+
+.button span{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
 
 .examCard{
     margin-top: 1em;
