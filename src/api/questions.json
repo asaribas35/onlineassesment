@@ -1,0 +1,31 @@
+{
+    "questions" : [
+        {
+            "exam-id" : 1 ,
+            "question" : "This movie contains the quote, &quot;What we&#039;ve got here is a failure to communicate.&quot;",
+            "answer" : [
+                "Cool Hand Luke",
+                "Bonnie and Clyde",
+                 "The Graduate",
+                 "In the Heat of the Night",
+                 "Charles"
+            ] 
+        },
+        {
+            "exam-id" : 1 ,
+            "question" : "In the 2011 TV anime series, &quot;THE iDOLM@STER&quot;, what was the name of Iori&#039;s stuffed toy bunny?",
+            "answer" : [
+                "Kero",
+                "Bubsy",
+                 "The Graduate",
+                 "Heat of the Night",
+                 "Charles"
+            ] 
+        }
+
+
+
+
+    ]
+
+}

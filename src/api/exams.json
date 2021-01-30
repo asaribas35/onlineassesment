@@ -5,7 +5,7 @@
             "lesson":"algorithms",
             "teacher":"John Doe",
             "type":"Quiz",
-            "last-time":"22/02/2021",
+            "lastTime":"22/02/2021",
             "time": 60
         },
         {
@@ -13,7 +13,7 @@
             "lesson":"Data",
             "type":"Quiz",
             "teacher":"Martin Bridge",
-            "last-time":"20/02/2021",
+            "lastTime":"20/02/2021",
             "time": 30
         },
         {
@@ -21,7 +21,7 @@
             "lesson":"AI",
             "type":"Midterm",
             "teacher":"Ahmet uslu",
-            "last-time":"18/02/2021",
+            "lastTime":"18/02/2021",
             "time": 60
         },
         {
@@ -29,8 +29,16 @@
             "lesson":"Math",
             "type":"Midterm",
             "teacher":"Aslı Arı",
-            "last-time":"19/02/2021",
+            "lastTime":"19/02/2021",
             "time": 46
+        },
+        {
+            "id": 5,
+            "lesson":"PL",
+            "type":"Midterm",
+            "teacher":"Mehmet Karaca",
+            "lastTime":"19/02/2021",
+            "time": 40
         }
     ]
 }

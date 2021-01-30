@@ -7,6 +7,23 @@ import {
 
 class ExamList extends React.Component {
 
+
+
+    state ={
+
+        questions : [] ,
+
+        Id : "" 
+
+    }
+
+    ExID = () => {
+        console.log(this.ket);
+    }
+
+    
+
+
     render() {
         return (
             <div>
@@ -20,7 +37,7 @@ class ExamList extends React.Component {
                         <p className="card-text">{exam.type} &nbsp;&nbsp;&nbsp; {exam.time} minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Day : {exam.lastTime} </p>
                     </div>
                     <div className="button ">
-                        <button className="btn btn-danger"><Link to="/exam"><span>Start Test</span></Link></button>
+                        <button  className="btn btn-danger"><Link to="/exam"><span>Start Test</span></Link></button>
                     </div>
                 </div>
 

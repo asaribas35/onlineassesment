@@ -14,54 +14,23 @@ import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 class App extends React.Component {
 
   state = {
-    exams: [
-      {
-        "id": 1,
-        "lesson": "algorithms",
-        "teacher": "John Doe",
-        "type": "Quiz",
-        "lastTime": "22/02/2021",
-        "time": 60
-      },
-      {
-        "id": 2,
-        "lesson": "Data",
-        "type": "Quiz",
-        "teacher": "Martin Bridge",
-        "lastTime": "20/02/2021",
-        "time": 30
-      },
-      {
-        "id": 3,
-        "lesson": "AI",
-        "type": "Midterm",
-        "teacher": "Ahmet uslu",
-        "lastTime": "18/02/2021",
-        "time": 60
-      },
-      {
-        "id": 4,
-        "lesson": "Math",
-        "type": "Midterm",
-        "teacher": "Aslı Arı",
-        "lastTime": "19/02/2021",
-        "time": 46
-      },
-      {
-        "id": 5,
-        "lesson": "Biology",
-        "type": "Midterm",
-        "teacher": "Serhat Dişli",
-        "lastTime": "19/02/2021",
-        "time": 60
-      }
-    ],
+    exams: [],
 
     search: "",
 
     loginP: false
 
   }
+
+  async componentDidMount(){
+    const baseURL = "http://localhost:3002/exams";
+    const response = await fetch(baseURL);
+    const data = await response.json();
+    this.setState({exams : data})
+  }
+
+
+
   searchExam = (event) => {
     console.log(event.target.value);
 
@@ -102,14 +71,14 @@ class App extends React.Component {
                 <span className="navbar-brand mb-0 h1 logo">Online Education Assesment
             </span>
                 <div className="nav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
                       <button type="button" className="btn btn-light ">Products</button>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <button type="button" className="btn btn-light ">Help</button>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <button type="button" className="btn btn-light buton3">ContactUs</button>
                     </li>
                   </ul>
