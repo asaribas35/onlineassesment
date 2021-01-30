@@ -23,6 +23,54 @@
                  "Heat of the Night",
                  "Charles"
             ] 
+        },
+        {
+            "exam-id" : 3 ,
+            "questionId" : 4,
+            "question" : " In LISP, the function returns the list that results after the first element is removed (the rest f the list), is __________",
+            "answer" : [
+                "car",
+                "last",
+                 "cons",
+                 "cdr",
+                 "All of the mentioned"
+            ] 
+        },
+        {
+            "exam-id" : 3 ,
+            "questionId" : 5,
+            "question" : "Which of the following contains the output segments of Artificial Intelligence programming?",
+            "answer" : [
+                "Printed language and synthesized speech",
+                "BManipulation of physical object",
+                 "Locomotion",
+                 "In the Heat of the Night",
+                 "All of the mentioned"
+            ] 
+        },
+        {
+            "exam-id" : 3 ,
+            "questionId" : 6,
+            "question" : "LISP was created by?",
+            "answer" : [
+                " John McCarthy",
+                "Marvin Minsky",
+                 "Alan Turing",
+                 "Allen Newell and Herbert Simon",
+                 "Charles"
+            ] 
+        },
+        {
+            "exam-id" : 3 ,
+            "questionId" : 7,
+            "question" : "An Artificial Intelligence system developed by Terry A. Winograd to permit an interactive dialogue about a domain he called blocks-world.",
+            "answer" : [
+                "SHRDLU",
+                "SIMD",
+                 "BACON",
+                 "STUDENT",
+                 "Charles"
+            ] 
         }
 
 

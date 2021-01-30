@@ -17,27 +17,28 @@ render(){
                         <div className="card cardQuestion">
                         <p className="question"><span>{soru.questionId}.</span> {soru.question}</p>
     
-    
+                         <fieldset>  
                           <div className="answer">
                             
                             {
                                 soru.answer.map((cho) => (
-                                    <div className="choices">
-                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                   <label className="form-check-label" for="flexRadioDefault1">
+                                    
+                                    <div className="choices form-check">
+                                    <input className="form-check-input" type="radio" name ={soru.questionId} id="flexRadioDefault1"/>
+                                   <label className="form-check-label" for="flexRadioDefault">
                                         {cho}
                                    </label>
                                </div>
-
+                               
 
                                 ))
                             }
-
+                            
 
 
  
                         </div>
-    
+                        </fieldset> 
                     </div>
                     )
 
