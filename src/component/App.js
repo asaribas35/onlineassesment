@@ -140,9 +140,11 @@ class App extends React.Component {
              />
 
           </Route>
+          <div className="footer-bottom">
 
         </div>
-      
+        </div>
+          
       </Router>
     );
   }
