@@ -50,6 +50,11 @@ render(){
 
 
             </div>
+            <div className="gonder">
+            <button type="button" className="btn btn-danger buton1">Complete Exam</button>
+            </div>
+
+
         </div>
 
 
