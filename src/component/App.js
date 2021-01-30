@@ -16,6 +16,8 @@ class App extends React.Component {
   state = {
     exams: [],
 
+    questions: [] ,
+
     search: "",
 
     loginP: false
@@ -27,6 +29,12 @@ class App extends React.Component {
     const response = await fetch(baseURL);
     const data = await response.json();
     this.setState({exams : data})
+
+    const qURL = "http://localhost:3003/questions";
+    const istek = await fetch(qURL);
+    const veri = await istek.json();
+    this.setState({questions:veri})
+
   }
 
 
@@ -127,7 +135,9 @@ class App extends React.Component {
           
           <Route path="/exam">
           
-             <ExamPage />
+             <ExamPage 
+             question ={this.state.questions}
+             />
 
           </Route>
 

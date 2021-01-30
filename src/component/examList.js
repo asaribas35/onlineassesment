@@ -8,22 +8,6 @@ import {
 class ExamList extends React.Component {
 
 
-
-    state ={
-
-        questions : [] ,
-
-        Id : "" 
-
-    }
-
-    ExID = () => {
-        console.log(this.ket);
-    }
-
-    
-
-
     render() {
         return (
             <div>
