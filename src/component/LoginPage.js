@@ -7,7 +7,7 @@ class LoginPage extends react.Component {
     render() {
         return (
             <div className="formBack">
-            <div className="formSayfa">
+            <div className="formSayfa1">
             <form>
             <button onClick={this.props.loginOC} className="loginX">x</button>
             <h3>Log in</h3>
