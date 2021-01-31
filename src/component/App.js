@@ -66,7 +66,11 @@ class App extends React.Component {
       }
     )
 
-
+      let filteredQuestions = this.state.questions.filter(
+        (question) => {
+            return question.examID.indexOf(this.state.clickExam) !== -1
+        }
+      )
 
 
     return (
@@ -141,7 +145,7 @@ class App extends React.Component {
           <Route path="/exam">
           
              <ExamPage 
-             question ={this.state.questions}
+             question ={filteredQuestions}
              examid = {this.state.clickExam}
              />
 

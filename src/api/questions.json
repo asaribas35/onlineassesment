@@ -61,7 +61,7 @@
             ] 
         },
         {
-            "examID" : "3" ,
+            "examID" : "2" ,
             "questionId" : 7,
             "question" : "An Artificial Intelligence system developed by Terry A. Winograd to permit an interactive dialogue about a domain he called blocks-world.",
             "answer" : [
@@ -74,7 +74,7 @@
         }
         ,
         {
-            "examID" : "3" ,
+            "examID" : "1" ,
             "questionId" : 8,
             "question" : "An Artificial Intelligence system developed by Terry A. Winograd to permit an interactive dialogue about a domain he called blocks-world.",
             "answer" : [
