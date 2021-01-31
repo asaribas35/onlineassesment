@@ -3,6 +3,7 @@ import SearchBar from './searchBar';
 import ExamList from './examList';
 import LoginPage from './LoginPage';
 import ExamPage from './ExamPage';
+import ExamCPage from './examCPage';
 import {
   BrowserRouter as Router,Route} from "react-router-dom";
 
@@ -147,7 +148,9 @@ class App extends React.Component {
              <ExamPage 
              question ={filteredQuestions}
              examid = {this.state.clickExam}
-             />
+             >
+               <ExamCPage />
+             </ExamPage>
 
           </Route>
           <div className="footer-bottom">

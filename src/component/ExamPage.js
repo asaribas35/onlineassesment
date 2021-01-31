@@ -4,10 +4,22 @@ import './ExamPage.css'
 
 class ExamPage extends react.Component{
  
-    
+    state = {
 
+
+        exitP : false
+    }
+
+    exitOC = () => {
+        this.setState({exitP: !this.state.exitP})
+    }
+
+ 
 
 render(){
+
+    
+
     return(
         <div className="container">
 
@@ -56,8 +68,20 @@ render(){
 
 
             </div>
+            
+                {
+                    (this.state.exitP) ?
+                    (this.props.children)
+                    :null
+
+
+                }
+
+
+            
+
             <div className="gonder">
-            <button type="button" className="btn btn-danger buton1">Complete Exam</button>
+            <button onClick={this.exitOC} type="button" className="btn btn-danger buton1">Complete Exam</button>
             </div>
 
 
