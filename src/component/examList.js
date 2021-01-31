@@ -7,6 +7,7 @@ import {
 
 class ExamList extends React.Component {
 
+    
 
     render() {
         return (
@@ -14,8 +15,8 @@ class ExamList extends React.Component {
 
             {
                 this.props.exams.map((exam) => ( // map fonksiyonu ile state den gelen diziyi teker teker bastır
-
-                    <div className="card w-85 examCard" ket={exam.id}>
+                    
+                    <div className="card w-85 examCard" key={exam.id}>
                     <div className="card-body ">
                         <h5 className="card-title">{exam.lesson} / {exam.teacher}</h5>
                         <p className="card-text">{exam.type} &nbsp;&nbsp;&nbsp; {exam.time} minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Day : {exam.lastTime} </p>
