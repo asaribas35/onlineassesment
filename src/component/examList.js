@@ -6,6 +6,10 @@ import {
   } from "react-router-dom";
 
 class ExamList extends React.Component {
+    sendID = (i,e) => {
+        
+        this.props.clExam(i);
+    }
 
     
 
@@ -22,7 +26,7 @@ class ExamList extends React.Component {
                         <p className="card-text">{exam.type} &nbsp;&nbsp;&nbsp; {exam.time} minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Day : {exam.lastTime} </p>
                     </div>
                     <div className="button ">
-                        <button  className="btn btn-danger"><Link to="/exam"><span>Start Test</span></Link></button>
+                        <button onClick={this.sendID.bind(this, exam.id)} className="btn btn-danger"><Link to="/exam"><span>Start Test</span></Link></button>
                     </div>
                 </div>
 

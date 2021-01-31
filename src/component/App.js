@@ -20,8 +20,9 @@ class App extends React.Component {
 
     search: "",
 
-    loginP: false
+    loginP: false,
 
+    clickExam: ""
   }
 
   async componentDidMount(){
@@ -37,7 +38,10 @@ class App extends React.Component {
 
   }
 
-
+  clickExam = (i) => {
+    
+    this.setState({clickExam: i})
+  }
 
   searchExam = (event) => {
     console.log(event.target.value);
@@ -61,6 +65,7 @@ class App extends React.Component {
         return exam.lesson.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
       }
     )
+
 
 
 
@@ -117,7 +122,7 @@ class App extends React.Component {
 
             <ExamList
               exams={filteredExams}
-
+              clExam = {this.clickExam}
             />
 
 
@@ -137,6 +142,7 @@ class App extends React.Component {
           
              <ExamPage 
              question ={this.state.questions}
+             examid = {this.state.clickExam}
              />
 
           </Route>

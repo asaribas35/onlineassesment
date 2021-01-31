@@ -3,6 +3,9 @@ import './ExamPage.css'
 
 
 class ExamPage extends react.Component{
+ 
+    
+
 
 render(){
     return(
@@ -14,6 +17,9 @@ render(){
                     
 
                     this.props.question.map((soru) => (
+ 
+
+
                         <div className="card cardQuestion">
                         <p className="question"><span>{soru.questionId}.</span> {soru.question}</p>
     
